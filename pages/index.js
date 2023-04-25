@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
+import Landingpage from '@/components/Landingpage/Landinpage';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="index-main">
-        <div>
-          <h1>Welcome to Next</h1>
-        </div>
+        <Landingpage />
       </main>
     </>
   )

@@ -7,7 +7,7 @@ $lighter-text: #e0e6e9;
 
 // BASE/BACKGROUND COLOURS
 $light-bg: #fafafa;
-$dkark-line: #393c49;
+$dark-line: #393c49;
 $dar-bg-one: #252836;
 $dark-bg-two: #1f1d2b;
 $form-bg: #2d303e;
@@ -15,6 +15,7 @@ $form-bg: #2d303e;
 // ACCENT COLOURS
 $pink: #ea736d;
 $light-pink: #ee8c87; // light version of pink or 76% opacity of pink
+$opaced-pink:#eb956a46;
 $green: #50d1aa;
 $light-green: #6be2be; // light version of green or 76% opacity of green
 $orange: #ffb572;
@@ -23,3 +24,26 @@ $purple: #9290fe;
 $light-purple: rgb(146, 144, 254, 0.8); // 80% opacity of purple
 $blue: #4658bc;
 $light-blue: #9290fe;
+
+
+:export {
+    dark-text: $dark-text;
+    grey-text: $grey-text;
+    light-text: $light-text;
+    lighter-text: $lighter-text;
+    light-bg: $light-bg;
+    dark-line: $dark-line;
+    dar-bg-one: $dar-bg-one;
+    dark-bg-two: $dark-bg-two;
+    form-bg: $form-bg;
+    pink: $pink;
+    light-pink: $light-pink;
+    green: $green;
+    light-green: $light-green;
+    orange: $orange;
+    light-orange: $light-orange;
+    purple: $purple;
+    light-purple: $light-purple;
+    blue: $blue;
+    light-blue: $light-blue;
+}
