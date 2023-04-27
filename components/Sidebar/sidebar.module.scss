@@ -1,44 +1,77 @@
 @import '../../styles/variables.scss';
 
-.nav{
-    width:102px;
-    height:100vh;
-    border-radius:16px;
-    display:flex;
-    justify-content: space-between;
+.nav {
+    width: 102px;
+    border-radius: 16px;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    padding:20px 0px 10px;
+    padding: 20px 0px 50px;
     background-color: $dark-bg-two;
 
     li,
-    div{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    div,
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
     }
-    div{
-        width:56px;
-        height:56px;
-        border-radius:12px;
-        background-color:$opaced-pink;
-    }
-    li{
-        // outline:2px solid red;
-        width:85px;
-        height:60px;
-        margin:5px 0 5px 19px;
-        background-color: $dar-bg-one;
-        border-radius:10px;
 
-        a{
-            margin:0 10px 0 0;
-            border:2px solid red;
+    div {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        background-color: $opaced-pink;
+        margin-bottom: 20px;
+
+        img {
+            width: 50%;
         }
     }
 
-    li:first-child{
-        border:2px solid green;
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        li {
+            width: 92px;
+            height: 70px;
+            margin: 5px 0 5px 15px;
+            // border:2px solid red;
+            border-radius: 20px;
+
+            a {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        li:first-child {
+            background-color: $dar-bg-one;
+            border-radius:15px 0 0 15px;
+
+            a {
+                width: 40px;
+                height: 40px;
+                background-color: $pink;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
     }
+
+    span {
+        width: 85px;
+        height: 50px;
+        margin: 40px 0 5px 19px;
+        // background-color: $dar-bg-one;
+        border-radius: 10px;
+    }
+
+
 }

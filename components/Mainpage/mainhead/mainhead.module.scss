@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px 10px;
+
+    div {
+        h1 {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%; // 39px;
+            color: $light-bg;
+        }
+
+        p {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $form-text;
+        }
+
+        label {
+            position: relative;
+
+            input {
+                width: 220px;
+                height: 48px;
+                border-radius: 8px;
+                border: 1px solid $dark-line;
+                background-color: $form-bg;
+                color: $form-text;
+                padding: 10px 10px 10px 30px;
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+            }
+
+            img {
+                position: absolute;
+                left: 10px;
+                top: 1px;
+            }
+        }
+    }
+}

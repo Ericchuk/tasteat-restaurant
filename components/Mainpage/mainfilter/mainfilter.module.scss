@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 20px;
+
+    h3 {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: $lighter-text
+    }
+
+    select {
+        background-color: $dark-bg-two;
+        width: 178px;
+        height: 48px;
+        border-radius: 8px;
+        border: 2px solid $dark-line;
+        color: $lighter-text;
+        padding: 0 20px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+    }
+}

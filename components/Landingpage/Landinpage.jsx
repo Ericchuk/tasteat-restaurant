@@ -1,5 +1,5 @@
 import Cart from "../Cart/Cart";
-import Mainpage from "../Mainpage/Mainpage";
+import Mainpage from "../Mainpage/mainpage/Mainpage";
 import Sidebar from "../Sidebar/Sidebar";
 import styles from './landingpage.module.scss'
 

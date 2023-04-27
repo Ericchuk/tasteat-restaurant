@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    padding: 15px 0px 10px;
+    color: $lighter-text;
+    border-bottom:2px solid $dark-line;
+    margin:0 0 0 20px;
+
+    li {
+        list-style: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        margin:0 20px 0 0;
+        position:relative;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    li:first-child{
+        color:$pink;
+    }
+
+    li:first-child:before{
+        content:'';
+        position:absolute;
+        width: 60%;
+        height:1px;
+        bottom:-12px;
+        left:0;
+        border-bottom:2px solid $pink;
+        border-radius: 10px;
+    }
+}

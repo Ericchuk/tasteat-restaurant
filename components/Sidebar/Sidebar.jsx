@@ -50,11 +50,6 @@ export default function Sidebar(){
             path:"/",
             icon:setting,
         },
-        {
-            id:7,
-            path:"/",
-            icon:transfer,
-        },
     ]
 
 
@@ -74,7 +69,15 @@ export default function Sidebar(){
             <div>
                  <Image src={logo} alt="logo" />
             </div>
-            {navData}
+
+            <main>
+                {navData}
+            </main>
+            
+
+            <span>
+                <Image src={transfer} alt="transfer" />
+            </span>
         </nav>
     )
 }

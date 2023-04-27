@@ -5,7 +5,10 @@ import styles from './cart.module.scss'
 export default function Cart(){
     return(
         <section className={styles.section}>
-            <Image src={cart} alt="cart" />
+            <div className={styles.imageContainer}>
+               <Image src={cart} alt="cart" /> 
+            </div>
+            
         </section>
     )
 }
