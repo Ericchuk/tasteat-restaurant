@@ -16,18 +16,35 @@
         color: $lighter-text
     }
 
-    select {
-        background-color: $dark-bg-two;
-        width: 178px;
-        height: 48px;
-        border-radius: 8px;
-        border: 2px solid $dark-line;
-        color: $lighter-text;
-        padding: 0 20px;
-        font-family: 'Barlow';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 130%;
+    label{
+        position:relative;
+
+        select {
+            background-color: $dark-bg-two;
+            width: 178px;
+            height: 48px;
+            border-radius: 8px;
+            border: 2px solid $dark-line;
+            color: $lighter-text;
+            padding: 0 20px 0 35px;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            -webkit-appearance:none;
+        }
+
+        img{
+            position: absolute;
+            top: 23px;
+            left:15px;
+            transition:transform .5s;
+        }
+
+        .icon-rotate{
+            transform: rotate(180deg);
+        }
     }
+
 }

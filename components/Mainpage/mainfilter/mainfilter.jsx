@@ -1,3 +1,6 @@
+// import dropdown from '../../../assets/icons/Mask.png';
+import dropdown from '../../../assets/icons/Mask.png'
+import Image from 'next/image';
 import styles from './mainfilter.module.scss'
 
 export default function Mainfillter(){
@@ -11,6 +14,7 @@ export default function Mainfillter(){
                     <option value="Luxury">Luxury</option>
                     <option value="Crispy">Crispy</option>
                 </select>
+                <Image src={dropdown} alt="dropdown" />
             </label>
         </section>
     )
