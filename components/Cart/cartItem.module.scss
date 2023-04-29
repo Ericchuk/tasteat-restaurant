@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+.section {
+
+    main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // border: 2px solid red;
+        padding: 0;
+
+        div:first-child {
+            // border: 2px solid red;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span {
+                background: transparent;
+                display: block;
+                padding: 0;
+
+                p:first-child {
+                    width: 90%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height:130%;
+                }
+
+                p:last-child {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                }
+            }
+        }
+
+        div {
+
+            p {
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+            }
+
+            span{
+                background:$dar-bg-one;
+                width:auto;
+                margin:0 25px 0 0;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+
+    }
+
+
+    aside{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        label{
+            width:100%;
+
+            input{
+                width:86%;
+                border:2px solid red;
+            }
+    
+        }
+
+        
+        div{
+            border:1px solid $pink;
+            border-radius:8px;
+        }
+    }
+
+}
