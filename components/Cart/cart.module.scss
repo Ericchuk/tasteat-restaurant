@@ -1,15 +1,22 @@
 @import '../../styles/variables.scss';
 
+.addWidth{
+    width:409px;
+}
+.removeWidth{
+    width:82px;
+}
+
 .section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 117vh;
-    width: 409px;
+    min-height: 100vh;
     background-color: $dark-bg-two;
     border-radius: 10px;
     padding: 20px 0 0;
     position:relative;
+    transition:width .3s ease-in;
 
 
     .imageContainer {
@@ -17,7 +24,7 @@
         height: 48px;
         border-radius: 8px;
         background-color: $pink;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
