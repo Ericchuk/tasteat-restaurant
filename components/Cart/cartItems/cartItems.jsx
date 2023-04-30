@@ -1,6 +1,6 @@
 import Image from "next/image";
-import dish from "../../assets/images/image 4 (1).png";
-import bin from "../../assets/icons/bin.svg";
+import dish from "../../../assets/images/image 4 (1).png";
+import bin from "../../../assets/icons/bin.svg";
 import styles from "./cartItem.module.scss";
 
 export default function CartItems() {
@@ -23,7 +23,7 @@ export default function CartItems() {
         <label>
           <input
             type="text"
-            placeholder="Please, just a little bit spicy only."
+            placeholder="Order note..."
           />
         </label>
 

@@ -3,7 +3,8 @@ import cart from "../../assets/icons/cart.svg";
 import styles from "./cart.module.scss";
 import { useContext } from "react";
 import { cartContext } from "../../contextApi";
-import CartItems from './cartItems'
+import CartItems from './cartItems/cartItems';
+import CartFooter from './cartFooter/CartFooter';
 
 
 export default function Cart() {
@@ -24,6 +25,7 @@ export default function Cart() {
           <h3>Price</h3>
         </div>
         <CartItems />
+        <CartFooter />
       </main>
     </section>
   );

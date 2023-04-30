@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+
+.section {
+    border-top: 2px solid $dark-line;
+    position: absolute;
+    width: 90%;
+    bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+    z-index:10;
+    background:$dark-bg-two;
+
+    div {
+        p:first-child {
+            color: $form-text;
+        }
+    }
+
+
+
+    main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        padding:0;
+
+        button {
+            border-radius: 8px;
+            border: 2px solid $pink;
+            padding: 14px 10px;
+            box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+            width: 175px;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        button:first-child {
+            background: transparent;
+            color: $pink;
+        }
+
+        button:last-child {
+            background: $pink;
+            color: $lighter-text;
+        }
+
+    }
+
+}

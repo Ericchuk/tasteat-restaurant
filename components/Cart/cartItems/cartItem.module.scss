@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
 .section {
 
@@ -25,7 +25,7 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    line-height:130%;
+                    line-height: 130%;
                 }
 
                 p:last-child {
@@ -48,10 +48,10 @@
                 line-height: 130%;
             }
 
-            span{
-                background:$dar-bg-one;
-                width:auto;
-                margin:0 25px 0 0;
+            span {
+                background: $dar-bg-one;
+                width: auto;
+                margin: 0 25px 0 0;
             }
 
             img {
@@ -65,24 +65,33 @@
     }
 
 
-    aside{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        label{
-            width:100%;
+    aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:30px;
 
-            input{
-                width:86%;
-                border:2px solid red;
+        label {
+            width: 100%;
+
+            input {
+                width: 95%;
+                background: $dar-bg-one;
+                color: $form-text;
+                height:48px;
+                padding:14px;
+                border:1px solid $dark-line;
+                border-radius:3px;
             }
-    
+
         }
 
-        
-        div{
-            border:1px solid $pink;
-            border-radius:8px;
+
+        div {
+            border: 1px solid $pink;
+            border-radius: 8px;
+            padding:14px;
+            cursor:pointer;
         }
     }
 
