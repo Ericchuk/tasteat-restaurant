@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+
+.section{
+    width:100%;
+    position:absolute;
+    background:$modal;
+    min-height:100vh;
+    z-index:25;
+    // overflow:hidden;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    border:2px solid yellow;
+
+
+    main{
+        max-width:407px;
+    }
+}

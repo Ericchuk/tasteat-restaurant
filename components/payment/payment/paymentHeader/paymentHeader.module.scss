@@ -1,0 +1,25 @@
+@import '../../../../styles/variables.scss';
+
+.section {
+
+    border-bottom: 2px solid $dark-line;
+    padding-bottom:20px;
+
+    h1 {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        color:$lighter-text;
+    }
+
+    p {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color:$light-text;
+    }
+}

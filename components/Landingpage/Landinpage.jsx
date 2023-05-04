@@ -1,4 +1,4 @@
-import Cart from "../Cart/Cart";
+import Cart from "../Cart/cart/Cart";
 import Mainpage from "../Mainpage/mainpage/Mainpage";
 import Sidebar from "../Sidebar/Sidebar";
 import styles from './landingpage.module.scss';

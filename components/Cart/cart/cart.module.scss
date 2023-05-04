@@ -1,7 +1,7 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
 .addWidth{
-    width:409px;
+    width:550px;
 }
 .removeWidth{
     width:82px;
@@ -30,8 +30,6 @@
     }
 
     main {
-        width: 100%;
-        padding: 0 20px;
         color: $lighter-text;
 
         h2 {

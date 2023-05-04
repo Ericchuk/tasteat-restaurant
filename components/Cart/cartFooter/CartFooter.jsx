@@ -1,7 +1,7 @@
 import styles from './CartFooter.module.scss'
 
 
-export default function CartFooter({closeCart}){
+export default function CartFooter({closeCart, proceed, proceedToPayment}){
     return(
         <section className={styles.section}>
             <div>
@@ -13,10 +13,10 @@ export default function CartFooter({closeCart}){
                 <p>$21.03</p>
             </div>
 
-            <main>
+           {!proceed ? <main>
                 <button onClick={closeCart}>Go back</button>
-                <button>Continue to Payment</button>
-            </main>
+                <button onClick={proceedToPayment}>Continue to Payment</button>
+            </main> : " "}
         </section>
     )
 }

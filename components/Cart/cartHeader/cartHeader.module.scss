@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.main{
+    width: 100%;
+    padding: 0 0px;
+    color: $lighter-text;
+
+    h2 {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    span {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 74px;
+        height: 34px;
+        background: $pink;
+        padding: 7px 12px;
+        border-radius: 8px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+
+        h3:first-child {
+            width: 60%;
+        }
+
+        h3 {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../../../styles/variables.scss';
+
+.section{
+    h2{
+        color:$lighter-text;
+        font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+    }
+    div{
+        display:flex;
+        justify-content:space-betweeen;
+        align-items:center;
+
+        aside{
+            border:2px solid red;
+        }
+    }
+    
+}
