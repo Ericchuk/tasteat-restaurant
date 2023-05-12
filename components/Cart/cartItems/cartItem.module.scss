@@ -2,11 +2,10 @@
 
 .section {
 
-    main {
+    .cartItemName {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // border: 2px solid red;
         padding: 0;
 
         div:first-child {
@@ -21,7 +20,7 @@
                 padding: 0;
 
                 p:first-child {
-                    width: 90%;
+                    width: 85%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -34,6 +33,7 @@
                     font-weight: 500;
                     font-size: 12px;
                     line-height: 140%;
+                    width:50%;
                 }
             }
         }
@@ -51,7 +51,7 @@
             span {
                 background: $dar-bg-one;
                 width: auto;
-                margin: 0 25px 0 0;
+                margin: 0 35px 0 0;
             }
 
             img {

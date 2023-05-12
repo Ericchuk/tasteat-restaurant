@@ -1,6 +1,6 @@
 import {useState, createContext} from 'react';
 export const cartContext = createContext();
-export const cartProvider = (prop) => {
+export const cartProvider = ({children}) => {
     const [cartItems, setCartItems] = useState([
         {
             id:0,
@@ -16,3 +16,5 @@ export const cartProvider = (prop) => {
         </cartContext.Provider>
     )
 }
+
+export const useCartContext = () => useContext(cartContext);

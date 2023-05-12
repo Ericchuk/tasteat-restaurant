@@ -1,14 +1,13 @@
+import Layout from '@/components/layout';
 import '@/styles/globals.scss';
-import variables from '../styles/_variables.scss'
-import { cartProvider } from '../contextApi'
 
 export default function App({ Component, pageProps }) {
   return (
-    <cartProvider >
+    <Layout >
       <article>
         <Component {...pageProps} />
       </article>
-    </cartProvider>
+    </Layout>
 
 
   )

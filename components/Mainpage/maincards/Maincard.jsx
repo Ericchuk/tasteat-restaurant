@@ -7,7 +7,7 @@ import Image from 'next/image';
 import styles from './maincard.module.scss';
 
 
-export default function Maincard(){
+export default function Maincard({placeOrder}){
     const dishes = [
         {
             id:0,
@@ -82,7 +82,7 @@ export default function Maincard(){
                 <h3>{item.name}</h3>
                 <p>${item.price}</p>
                 <p>{item.amountAvailable} Bowls available</p>
-                <button>Order now</button>
+                <button onClick={() => placeOrder(dish[item.id])}>Order now</button>
             </div>
         )
     })

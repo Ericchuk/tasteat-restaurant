@@ -1,22 +1,39 @@
 import Image from "next/image";
+import { useState } from 'react';
 import dish from "../../../assets/images/image 4 (1).png";
 import bin from "../../../assets/icons/bin.svg";
 import styles from "./cartItem.module.scss";
+import { useCartContext } from "../../../contextApi";
 
 export default function CartItems() {
-  return (
-    <section className={styles.section}>
-      <main>
+  
+  // const { cartItems, setCartItems } = useCartContext();
+  const [cartItems, setCartItems] =  useState([
+    {
+        id:0,
+        img:dish,
+        name:"Spicy seasoned seafood noodles",
+        price:2.29,
+        quantity:1,
+    }
+]);
+
+
+  const cartItem = cartItems.map((item) => {
+    const totalPrice = item.price * item.quantity;
+    return(
+      <>
+        <main className={styles.cartItemName} key={item.id}>
         <div>
-          <Image src={dish} alt="dish" />
+          <Image src={item.img} alt="dish" />
           <span>
-            <p className={styles.description}>Spicy seasoning seafood</p>
-            <p>$2.27</p>
+            <p className={styles.description}>{item.name}</p>
+            <p>${item.price}</p>
           </span>
         </div>
         <div>
-          <span>2</span>
-          <p>$4.58</p>
+          <span>{item.quantity}</span>
+          <p>${totalPrice}</p>
         </div>
       </main>
       <aside>
@@ -31,6 +48,14 @@ export default function CartItems() {
             <Image src={bin} alt="bin" />
         </div>
       </aside>
+      </>
+    )
+  })
+
+
+  return (
+    <section className={styles.section}>
+      {cartItem}
     </section>
   );
 }

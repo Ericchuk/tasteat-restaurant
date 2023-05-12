@@ -3,7 +3,12 @@
 .section {
 
     border-bottom: 2px solid $dark-line;
-    padding-bottom:20px;
+    padding-bottom:20px; 
+    padding-top:60px;
+
+    main{
+        flex-direction:column;
+    }
 
     h1 {
         font-family: 'Barlow';

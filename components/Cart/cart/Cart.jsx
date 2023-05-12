@@ -8,7 +8,7 @@ import CartItems from "../cartItems/cartItems";
 import CartFooter from "../cartFooter/CartFooter";
 import PaymentPage from '../../payment/paymentPage/PaymentPage';
 
-export default function Cart() {
+export default function Cart({cartItems,placeOrder}) {
   // const {cartItems, setCartItems} = useContext(cartContext)
 
   const [open, setOpen] = useState(false);
@@ -51,7 +51,7 @@ export default function Cart() {
         {open ? (
           <main className={styles.main}>
             <CartHeader />
-            <CartItems />
+            <CartItems cartItems ={cartItems} placeOrder={placeOrder} />
             <CartFooter closeCart={closeCart} proceed={proceed} proceedToPayment={proceedToPayment}/>
           </main>
         ) : (

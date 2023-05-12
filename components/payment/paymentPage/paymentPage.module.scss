@@ -10,10 +10,13 @@
     display:flex;
     justify-content:flex-end;
     align-items:center;
-    border:2px solid yellow;
 
 
     main{
-        max-width:407px;
+        max-width:800px;
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        background-color:$dark-bg-two;
     }
 }

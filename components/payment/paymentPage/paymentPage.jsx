@@ -6,10 +6,8 @@ export default function PaymentPage({back}) {
   return (
     <section className={styles.section}>
       <main>
-        {/* <ConfirmationPage back={back} /> */}
+        <ConfirmationPage back={back} />
         <PaymentPageClog />
-
-        <h1>kjhu</h1>
       </main>
     </section>
   );

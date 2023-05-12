@@ -1,22 +1,42 @@
 @import '../../../../styles/variables.scss';
 
-.section{
-    h2{
-        color:$lighter-text;
+.section {
+    h2 {
+        color: $lighter-text;
         font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 140%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        margin: 20px 0;
     }
-    div{
-        display:flex;
-        justify-content:space-betweeen;
-        align-items:center;
 
-        aside{
-            border:2px solid red;
+    div {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+
+        aside {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            gap:10px;
+            color:$lighter-text;
+            border:1px solid $dark-line;
+            padding:6px;
+            width:101px;
+            height:64px;
+            border-radius:8px;
+            position:relative;
+
+            .tick{
+                position:absolute;
+                top:3px;
+                right:10px;
+            }
         }
     }
-    
+
 }
