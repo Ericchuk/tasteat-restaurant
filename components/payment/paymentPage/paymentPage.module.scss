@@ -12,11 +12,19 @@
     align-items:center;
 
 
-    main{
-        max-width:800px;
+    > main{
+        max-width:900px;
         display:flex;
         justify-content: space-between;
         align-items:flex-start;
         background-color:$dark-bg-two;
+    }
+
+    .addWidth{
+        max-width:100%;
+    }
+
+    .removeWidth{
+        max-width:900px;
     }
 }

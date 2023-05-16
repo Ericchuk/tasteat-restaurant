@@ -1,0 +1,114 @@
+@import '../../../../../styles/variables.scss';
+
+.gps {
+    color: $lighter-text;
+
+    h2 {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: $lighter-text;
+        margin:20px 0;
+    }
+
+    aside {
+        border-radius: 8px;
+        background-color: $dar-bg-one;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $lighter-text;
+        height:64px;
+
+        div{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            gap:2px;
+
+            p{
+                font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+            }
+        }
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin: 20px 0;
+
+        hr {
+            background-color: $dark-line;
+            border:.5px solid $dark-line;
+            width: 100%;
+            height:1px;
+        }
+    }
+
+    .manually{
+        background-color:transparent;
+        height:auto;
+        display:block;
+
+        h5{
+            font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 130%;
+padding:10px 0;
+        }
+
+        p{
+            font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+color:$light-text;
+
+span{
+    color:$pink;
+    text-decoration:underline;
+}
+        }
+
+        input{
+            background:$dar-bg-one;
+            color:$light-text;
+            width:100%;
+            height:48px;
+            margin:10px 0;
+            border-radius:8px;
+            border:1px solid $dark-line;
+            outline:none;
+            padding:14px;
+            font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+text-transform:capitalize;
+        }
+
+        label{
+            p{
+                margin:15px 0 0px;
+            }
+            input{
+                height:48px;
+            }
+        }
+    }
+}

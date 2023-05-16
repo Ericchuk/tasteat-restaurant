@@ -5,13 +5,13 @@ import Footer from '../footer/footer'
 import styles from './payment.module.scss'
 
 
-export default function PaymentPageClog(){
+export default function PaymentPageClog({confirmPayment,cancelPayment, confirm}){
     return(
         <section className={styles.paymentSection}>
             <PaymentHeader />
             <Cards />
             <CardDetails />
-            <Footer />
+            {confirm ? " " : <Footer confirmPayment={confirmPayment} cancelPayment={cancelPayment} />}
         </section>
     )
 }

@@ -3,7 +3,7 @@
 .section {
     background: $dark-bg-two;
     min-height: 100vh;
-    max-width: 407px;
+    min-width: 450px;
     color: $lighter-text;
     padding: 0 10px;
     border-right: 1px solid $dark-line;

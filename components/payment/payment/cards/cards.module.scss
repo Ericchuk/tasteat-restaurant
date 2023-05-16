@@ -13,8 +13,9 @@
 
     div {
         display: flex;
-        justify-content:space-between;
+        justify-content:flex-start;
         align-items: center;
+        gap:20px;
         width: 100%;
 
         aside {
@@ -36,6 +37,10 @@
                 top:3px;
                 right:10px;
             }
+        }
+
+        aside:first-child{
+            background: $dar-bg-one;
         }
     }
 
